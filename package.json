@@ -1,0 +1,11 @@
+{
+  "name": "emp.ty",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx eleventy clean && npx eleventy --serve"
+  },
+  "author": "",
+  "license": "ISC"
+}
