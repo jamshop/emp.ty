@@ -4,7 +4,7 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "npx eleventy clean && npx eleventy --serve"
+    "start": "npx eleventy --serve"
   },
   "author": "",
   "license": "ISC"
