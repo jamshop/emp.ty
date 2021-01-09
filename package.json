@@ -1,14 +1,30 @@
 {
   "name": "emp.ty",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "A boilerplate for 11ty projects. It is ABSOLUTELY empty.",
   "main": ".eleventy.js",
+  "repository": "jamshop/emp.ty",
   "scripts": {
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "test": "ava --verbose",
+    "update-tests": "ava --update-snapshots"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Mike Riethmuller",
+    "email": "mike@madebymike.com.au",
+    "url": "https://madebymike.com.au"
+  },
+  "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "latest"
+    "@11ty/eleventy": "latest",
+    "@jamshop/eleventy-filter-dump": "latest",
+    "@jamshop/eleventy-plugin-lodash": "latest",
+    "ava": "^3.12.1"
+  },
+  "ava": {
+    "files": [
+      "**/*.test.js"
+    ]
   }
 }
